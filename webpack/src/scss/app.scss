@@ -1,1 +1,100 @@
 @import 'base/reset.scss';
+@import 'base/var.scss';
+
+
+body {
+    font-family: $base-font;
+    font-size: $font-size;
+    background-color: $background-color;
+    color: $text-color;
+
+}
+#navigation{
+    display: flex;
+    justify-content: center;
+    
+}
+
+h1 {
+    
+    font-size: 4em;
+    text-align: center;
+    font-style: bold;
+}
+
+
+.serveurs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+.serveurItem {
+    background-color: $background-color-item;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.serveurItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn {
+    background-color: #ffbf00;
+    color: #070707;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.etat {
+    font-weight: bold;
+    color: #00b300;
+}
+.out {
+    font-weight: bold;
+    color: #f40e0e;
+}
+
+
+p {
+    margin: 5px 0;
+}
+
+
+span {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #faf1f1;
+}
+
+
+@media (max-width: 768px) {
+    .serveurs {
+        flex-direction: column; 
+    }
+    .serveurItem {
+        width: 100%;
+    }
+}

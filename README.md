@@ -33,7 +33,7 @@ Durée Totale: 3 heures
   1. **Projet** :
      - Initialisation et configuration de npm, Webpack et Babel pour le projet
   2. **SCSS** :
-     - Création et utilisation de varibles SCSS pour les couleurs et les polices afin de styliser le dashboard de manière cohérente et facilement modifiable
+     - Création et cpu de varibles SCSS pour les couleurs et les polices afin de styliser le dashboard de manière cohérente et facilement modifiable
 
 ---
 
